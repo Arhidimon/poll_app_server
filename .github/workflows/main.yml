@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Deploy to heroku.
 
 # Controls when the workflow will run
 on:
@@ -41,6 +41,6 @@ jobs:
          # Dockerfile name. [default=Dockerfile]
          dockerfile_name: Dockerfile
          # Additional options of docker build command
-         docker_options: --target production
+         docker_options: "--target production"
          # Select process type for wich you want docker container to be uploaded. [default=web]
          process_type: web
