@@ -8,7 +8,7 @@ import { MongooseModule } from '@nestjs/mongoose';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://mongodb/polls_app'),
+    MongooseModule.forRoot(process.env.MONGODB_URL),
     AuthModule,
     UsersModule,
     PollsModule,
